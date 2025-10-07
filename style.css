@@ -1,0 +1,139 @@
+/* General Page Style */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  color: #333;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Section */
+header {
+  background-color: #b3e5fc;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #01579b;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #81d4fa;
+}
+
+/* Headings */
+h1 {
+  color: #0277bd;
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 18px;
+  max-width: 750px;
+  margin: 10px auto 25px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Links / Buttons */
+a {
+  color: #01579b;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #b3e5fc;
+  padding: 10px 18px;
+  border-radius: 25px;
+  margin: 5px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  background-color: #81d4fa;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  padding: 15px;
+  background-color: #e1f5fe;
+  color: #0277bd;
+  font-size: 14px;
+  border-top: 2px solid #b3e5fc;
+}
+
+/* Optional box layout for About page */
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 2px solid #b3e5fc;
+  border-radius: 15px;
+  padding: 20px;
+  width: 230px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  color: #0277bd;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+}
+/* Split layout for homepage */
+.split-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.split-layout .left, .split-layout .right {
+  flex: 1 1 45%;
+}
+
+.split-layout .left img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.split-layout .right {
+  text-align: left;
+}
+
+.split-layout .right h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column;
+  }
+  .split-layout .left, .split-layout .right {
+    flex: 1 1 100%;
+  }
+  .split-layout .right {
+    margin-top: 1rem;
+  }
+}
